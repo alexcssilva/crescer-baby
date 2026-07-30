@@ -199,37 +199,60 @@
     .sticky-cta.show{transform:translateY(0)}
     .sticky-cta .btn-cta{font-size:16px;padding:15px 20px}
 
-    /* === ADAPTAÇÃO RESPONSIVA E UNIFICAÇÃO DESKTOP === */
+    /* === ADAPTAÇÃO RESPONSIVA EM 3 CAMADAS (MOBILE, TABLET, DESKTOP AMPLO) === */
+    
+    /* CAMADA 2: TABLET (640px a 1023px) */
     @media(min-width: 640px){
+      .container{max-width:780px}
       .recebe__grid{grid-template-columns:1fr 1fr}
       .beneficios__grid{grid-template-columns:1fr 1fr}
       .beneficio-card{text-align:left}
       .depoimentos{grid-template-columns:1fr 1fr}
       .depoimentos .depoimento:last-child{grid-column:1/-1}
       .steps{grid-template-columns:1fr 1fr}
-      .step{flex-direction:row;text-align:left}
+      .step{flex-direction:row;text-align:left;align-items:flex-start}
       .depoimento{text-align:left}
       .depoimento__autor{justify-content:flex-start}
     }
 
-    @media(min-width: 840px){
-      .hero__inner{flex-direction:row;justify-content:space-between;text-align:left}
-      .hero__copy{align-items:flex-start}
-      .hero__img-wrap{flex:0 0 380px;margin:0}
-      .hero .btn-cta{margin:0}
+    /* CAMADA 3: DESKTOP AMPLO (1024px a 1440px+) */
+    @media(min-width: 1024px){
+      .container{max-width:1140px}
+      section{padding:84px 0}
+
+      /* Hero Desktop de Alto Impacto */
+      .hero{padding:64px 0 76px}
+      .hero__inner{flex-direction:row;justify-content:space-between;align-items:center;gap:60px;text-align:left}
+      .hero__copy{align-items:flex-start;text-align:left;max-width:620px}
+      .hero h1{font-size:40px;line-height:1.2;text-align:left}
+      .hero__sub{font-size:18px;text-align:left;margin-bottom:32px}
+      .hero .btn-cta{margin:0;max-width:440px}
       .trust-badges{justify-content:flex-start}
+      .hero__img-wrap{flex:0 0 440px;max-width:440px;margin:0}
 
-      .beneficios__grid{grid-template-columns:1fr 1fr}
-      .depoimentos{grid-template-columns:repeat(3, 1fr)}
+      /* Grids Executivos em 3 e 4 Colunas */
+      .recebe__grid{grid-template-columns:repeat(3, 1fr);gap:24px}
+      .beneficios__grid{grid-template-columns:repeat(4, 1fr);gap:20px}
+      .beneficio-card{padding:28px 22px;text-align:left}
+      
+      .steps{grid-template-columns:repeat(4, 1fr);gap:24px}
+      .step{flex-direction:column;align-items:flex-start;text-align:left;padding:26px 20px}
+      
+      .depoimentos{grid-template-columns:repeat(3, 1fr);gap:24px;text-align:left}
       .depoimentos .depoimento:last-child{grid-column:auto}
-      .steps{grid-template-columns:repeat(4, 1fr)}
 
-      .oferta__wrapper{display:flex;align-items:center;gap:44px;text-align:left;padding:44px 48px}
-      .oferta__copy{flex:1}
+      /* Oferta Desktop Ampla */
+      .oferta{padding:92px 0}
+      .oferta__wrapper{display:flex;flex-direction:row;justify-content:space-between;align-items:center;gap:60px;text-align:left;padding:56px 64px}
+      .oferta__copy{flex:1;min-width:0}
       .oferta__incluso{margin-bottom:0}
-      .oferta__right{flex:0 0 360px;display:flex;flex-direction:column;align-items:center;text-align:center}
+      .oferta__right{flex:0 0 380px;width:380px;display:flex;flex-direction:column;align-items:center;text-align:center}
       .oferta__box-preco{width:100%;margin-top:0}
-      .autoridade__box{text-align:left}
+
+      /* Garantia e Autoridade Desktop */
+      .garantia__box{display:flex;align-items:center;gap:32px;text-align:left;padding:48px 56px}
+      .garantia__icon{margin-bottom:0;flex-shrink:0;font-size:64px}
+      .autoridade__box{padding:40px 48px;text-align:left}
     }
   </style>
 </head>
