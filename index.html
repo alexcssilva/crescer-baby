@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="30 Guias Visuais para identificar sinais de atraso no desenvolvimento infantil. Saiba quando é só o tempo do seu filho — e quando buscar ajuda. Acesso imediato por R$19,90.">
+  <title>30 Guias Visuais do Desenvolvimento Infantil — Menos Dúvida, Mais Clareza</title>
+
+  <!-- Preconnect para Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Preload da fonte principal -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"></noscript>
+
+  <!-- Critical CSS inline -->
+  <style>
+    /* === RESET & BASE === */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+    body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#FFF9F5;color:#1A1A1A;line-height:1.6;font-size:16px;font-display:swap}
+    img{max-width:100%;height:auto;display:block}
+    a{color:inherit;text-decoration:none}
+
+    /* === TOKENS === */
+    :root{
+      --rosa:#C2185B;
+      --rosa-light:#F48FB1;
+      --rosa-dark:#880E4F;
+      --verde:#2E7D32;
+      --verde-light:#A5D6A7;
+      --amarelo:#F57F17;
+      --creme:#FFF9F5;
+      --creme2:#FFF0EA;
+      --cinza:#6B7280;
+      --cinza-claro:#F3F4F6;
+      --preto:#1A1A1A;
+      --r1:8px;
+      --r2:16px;
+      --r3:24px;
+      --sombra:0 4px 24px rgba(0,0,0,.10);
+      --sombra-forte:0 8px 40px rgba(0,0,0,.18);
+    }
+
+    /* === UTILITÁRIOS === */
+    .container{width:100%;max-width:480px;margin:0 auto;padding:0 20px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+    /* === BARRA TOPO === */
+    .topbar{background:var(--rosa-dark);color:#fff;text-align:center;padding:10px 16px;font-size:clamp(11px,3.2vw,13px);font-weight:700;letter-spacing:.3px}
+    .topbar span{color:var(--rosa-light)}
+
+    /* === HERO === */
+    .hero{background:linear-gradient(165deg,#FFF0EA 0%,#FFE4EC 60%,#FFF9F5 100%);padding:32px 0 0}
+    .hero__badge{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid var(--rosa-light);border-radius:40px;padding:6px 14px;font-size:12px;font-weight:700;color:var(--rosa);margin-bottom:18px;box-shadow:0 2px 8px rgba(194,24,91,.10)}
+    .hero__badge::before{content:'🌿';font-size:14px}
+    .hero h1{font-size:clamp(22px,6.2vw,30px);font-weight:900;line-height:1.22;color:var(--preto);margin-bottom:14px;letter-spacing:-.4px}
+    .hero h1 em{color:var(--rosa);font-style:normal}
+    .hero__sub{font-size:clamp(14px,4vw,16px);color:#444;margin-bottom:24px;line-height:1.6}
+    .hero__img-wrap{position:relative;margin:0 -20px}
+    .hero__img{width:100%;height:auto;display:block;object-fit:cover;border-radius:0}
+
+    .hero__inner{width:100%}
+    .hero__copy{width:100%;padding:0 20px}
+    .cta-wrap{padding:28px 20px 0}
+    .btn-cta{display:block;width:100%;background:linear-gradient(135deg,var(--rosa) 0%,var(--rosa-dark) 100%);color:#fff;text-align:center;padding:18px 20px;border-radius:var(--r2);font-size:18px;font-weight:900;letter-spacing:.2px;border:none;cursor:pointer;box-shadow:0 6px 28px rgba(194,24,91,.45);transition:transform .15s,box-shadow .15s;text-decoration:none;line-height:1.3;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+    .btn-cta:active{transform:scale(.97);box-shadow:0 3px 14px rgba(194,24,91,.35)}
+    .btn-cta small{display:block;font-size:12px;font-weight:400;opacity:.85;margin-top:4px}
+    .cta-seguro{text-align:center;font-size:12px;color:var(--cinza);margin-top:10px;display:flex;align-items:center;justify-content:center;gap:5px}
+    .cta-seguro::before{content:'🔒'}
+
+    /* === SEÇÃO GENÉRICA === */
+    section{padding:36px 0}
+    .section-label{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--rosa);margin-bottom:8px}
+    .section-title{font-size:clamp(20px,5.5vw,26px);font-weight:900;line-height:1.25;color:var(--preto);margin-bottom:4px}
+    .section-sub{font-size:14px;color:var(--cinza);margin-bottom:24px}
+
+    /* === O QUE VOCÊ RECEBE === */
+    .recebe{background:#fff}
+    .recebe__list{list-style:none;display:flex;flex-direction:column;gap:12px}
+    .recebe__item{display:flex;align-items:flex-start;gap:12px;background:var(--creme2);border-radius:var(--r1);padding:14px}
+    .recebe__icon{font-size:20px;flex-shrink:0;margin-top:1px}
+    .recebe__text{font-size:14px;font-weight:600;color:var(--preto);line-height:1.4}
+
+    /* === BENEFÍCIOS === */
+    .beneficios{background:var(--creme)}
+    .beneficios__grid{display:flex;flex-direction:column;gap:14px}
+    .beneficio-card{background:#fff;border-radius:var(--r2);padding:18px;box-shadow:var(--sombra);border-left:4px solid var(--rosa)}
+    .beneficio-card__icon{font-size:26px;margin-bottom:8px}
+    .beneficio-card__title{font-size:15px;font-weight:700;color:var(--preto);margin-bottom:4px}
+    .beneficio-card__desc{font-size:13px;color:var(--cinza);line-height:1.5}
+
+    /* === COMO FUNCIONA === */
+    .como-funciona{background:#fff}
+    .steps{display:flex;flex-direction:column;gap:0}
+    .step{display:flex;gap:16px;padding-bottom:24px;position:relative}
+    .step:not(:last-child)::after{content:'';position:absolute;left:19px;top:44px;bottom:0;width:2px;background:linear-gradient(to bottom,var(--rosa-light),transparent)}
+    .step__num{width:40px;height:40px;border-radius:50%;background:var(--rosa);color:#fff;font-weight:900;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 12px rgba(194,24,91,.3)}
+    .step__content{}
+    .step__title{font-size:15px;font-weight:700;color:var(--preto);margin-bottom:4px;margin-top:8px}
+    .step__desc{font-size:13px;color:var(--cinza);line-height:1.5}
+
+    /* === PROVA SOCIAL === */
+    .prova{background:linear-gradient(135deg,#FFF0EA,#FFE4EC)}
+    .depoimentos{display:flex;flex-direction:column;gap:14px}
+    .depoimento{background:#fff;border-radius:var(--r2);padding:18px;box-shadow:var(--sombra);position:relative}
+    .depoimento::before{content:'\201C';position:absolute;top:-4px;left:14px;font-size:52px;color:var(--rosa-light);font-family:Georgia,serif;line-height:1}
+    .depoimento__text{font-size:14px;color:#444;line-height:1.6;padding-top:20px;font-style:italic}
+    .depoimento__autor{margin-top:10px;font-size:13px;font-weight:700;color:var(--rosa);display:flex;align-items:center;gap:6px}
+    .depoimento__autor::before{content:'⭐⭐⭐⭐⭐';font-size:11px}
+
+    /* === BÔNUS === */
+    .bonus{background:#fff}
+    .bonus__header{background:linear-gradient(135deg,var(--rosa) 0%,var(--rosa-dark) 100%);border-radius:var(--r2) var(--r2) 0 0;padding:16px;text-align:center;color:#fff}
+    .bonus__header-title{font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;opacity:.85}
+    .bonus__header-value{font-size:13px;margin-top:2px;opacity:.75}
+    .bonus__list{border:2px solid var(--rosa-light);border-top:none;border-radius:0 0 var(--r2) var(--r2);overflow:hidden}
+    .bonus__item{display:flex;align-items:flex-start;gap:12px;padding:14px;border-bottom:1px solid #FFF0EA}
+    .bonus__item:last-child{border-bottom:none}
+    .bonus__item-icon{font-size:22px;flex-shrink:0}
+    .bonus__item-info{}
+    .bonus__item-name{font-size:14px;font-weight:700;color:var(--preto);line-height:1.3}
+    .bonus__item-price{font-size:12px;color:var(--cinza);margin-top:2px}
+    .bonus__total{background:var(--creme2);border-radius:var(--r1);padding:12px 16px;margin-top:14px;text-align:center;font-size:14px;color:var(--cinza)}
+    .bonus__total strong{color:var(--verde);font-size:18px}
+
+    /* === OFERTA === */
+    .oferta{background:linear-gradient(165deg,#1A1A1A 0%,#2D1527 100%);color:#fff}
+    .oferta .section-label{color:var(--rosa-light)}
+    .oferta .section-title{color:#fff}
+    .oferta__box{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);border-radius:var(--r2);padding:20px;margin-bottom:20px}
+    .oferta__incluso{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
+    .oferta__incluso li{display:flex;align-items:center;gap:8px;font-size:14px;color:rgba(255,255,255,.85)}
+    .oferta__incluso li::before{content:'✓';color:var(--verde-light);font-weight:700;font-size:15px;flex-shrink:0}
+    .oferta__preco{text-align:center;padding:20px 0 8px}
+    .oferta__de{font-size:14px;color:rgba(255,255,255,.5);text-decoration:line-through;margin-bottom:4px}
+    .oferta__por{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:6px}
+    .oferta__valor{font-size:clamp(42px,11vw,56px);font-weight:900;color:#fff;line-height:1;letter-spacing:-1px}
+    .oferta__valor sup{font-size:22px;font-weight:700;vertical-align:top;margin-top:10px;margin-right:2px;color:var(--rosa-light)}
+    .oferta__valor sub{font-size:18px;font-weight:600;color:rgba(255,255,255,.7)}
+    .oferta__parcelas{font-size:12px;color:rgba(255,255,255,.5);margin-top:6px}
+    .oferta__urgencia{text-align:center;font-size:13px;color:var(--rosa-light);margin:14px 0 8px;font-weight:600}
+    .btn-cta--dark{background:linear-gradient(135deg,#FF4081 0%,#C2185B 100%);box-shadow:0 6px 32px rgba(255,64,129,.5)}
+
+    /* === GARANTIA === */
+    .garantia{background:var(--creme)}
+    .garantia__box{background:#fff;border-radius:var(--r2);padding:24px 20px;box-shadow:var(--sombra);text-align:center;border:2px solid var(--verde-light)}
+    .garantia__icon{font-size:56px;margin-bottom:12px}
+    .garantia__title{font-size:18px;font-weight:900;color:var(--verde);margin-bottom:8px}
+    .garantia__text{font-size:14px;color:#444;line-height:1.6}
+
+    /* === AUTORIDADE === */
+    .autoridade{background:#fff}
+    .autoridade__box{background:var(--creme2);border-radius:var(--r2);padding:18px;border-left:4px solid var(--rosa)}
+    .autoridade__title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--cinza);margin-bottom:8px}
+    .autoridade__text{font-size:13px;color:#555;line-height:1.6}
+
+    /* === FAQ === */
+    .faq{background:var(--creme)}
+    .faq__list{display:flex;flex-direction:column;gap:10px}
+    .faq__item{background:#fff;border-radius:var(--r1);overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+    .faq__question{width:100%;background:none;border:none;text-align:left;padding:16px;font-size:14px;font-weight:700;color:var(--preto);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:8px;line-height:1.4;-webkit-tap-highlight-color:transparent}
+    .faq__question::after{content:'+';font-size:20px;color:var(--rosa);font-weight:700;flex-shrink:0;transition:transform .2s}
+    .faq__item.open .faq__question::after{transform:rotate(45deg)}
+    .faq__answer{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s}
+    .faq__item.open .faq__answer{max-height:200px}
+    .faq__answer p{padding:0 16px 16px;font-size:13px;color:#555;line-height:1.6}
+
+    /* === FOOTER CTA === */
+    .footer-cta{background:linear-gradient(135deg,var(--rosa) 0%,var(--rosa-dark) 100%);padding:40px 0}
+    .footer-cta__title{font-size:clamp(20px,5.5vw,26px);font-weight:900;color:#fff;text-align:center;margin-bottom:8px;line-height:1.3}
+    .footer-cta__sub{font-size:14px;color:rgba(255,255,255,.8);text-align:center;margin-bottom:24px}
+
+    /* === FOOTER === */
+    .footer{background:var(--preto);color:rgba(255,255,255,.5);text-align:center;padding:20px;font-size:11px;line-height:1.7}
+    .footer a{color:rgba(255,255,255,.4);text-decoration:underline}
+
+    /* === STICKY CTA MOBILE === */
+    .sticky-cta{position:fixed;bottom:0;left:0;right:0;padding:12px 20px 16px;background:rgba(255,249,245,.97);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 -4px 20px rgba(0,0,0,.12);z-index:100;transform:translateY(100%);transition:transform .3s ease;padding-bottom:max(16px,env(safe-area-inset-bottom))}
+    .sticky-cta.show{transform:translateY(0)}
+    .sticky-cta .btn-cta{font-size:16px;padding:15px 20px}
+
+    /* === ANIMAÇÕES === */
+    @media(prefers-reduced-motion:no-preference){
+      .fade-in{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+      .fade-in.visible{opacity:1;transform:translateY(0)}
+    }
+
+    /* === TABLET (≥ 640px) === */
+    @media(min-width:640px){
+      .container{max-width:600px;padding:0 32px}
+      section{padding:52px 0}
+      .recebe__list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+      .beneficios__grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+      .depoimentos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+      .depoimentos .depoimento:last-child{grid-column:1/-1}
+      .steps{display:grid;grid-template-columns:1fr 1fr;gap:24px 32px}
+      .step:not(:last-child)::after{display:none}
+      .bonus__list{display:grid;grid-template-columns:1fr 1fr 1fr}
+      .bonus__item{border-bottom:none;border-right:1px solid #FFF0EA}
+      .bonus__item:last-child{border-right:none}
+      .oferta__incluso{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px}
+      .footer-cta .btn-cta{max-width:400px;margin:0 auto}
+    }
+
+    /* === DESKTOP (≥ 1024px) === */
+    @media(min-width:1024px){
+      .container{max-width:860px;padding:0 40px}
+      section{padding:72px 0}
+
+      /* Hero: texto à esquerda, imagem à direita */
+      .hero{padding:60px 0 0}
+      .hero__inner{display:flex;align-items:center;gap:48px;max-width:860px;margin:0 auto;padding:0 40px 0}
+      .hero__copy{flex:1;min-width:0}
+      .hero__img-wrap{flex:0 0 420px;margin:0;border-radius:var(--r3);overflow:hidden;box-shadow:var(--sombra-forte)}
+      .hero__img{border-radius:var(--r3)}
+      .hero h1{font-size:clamp(30px,3.4vw,42px)}
+      .hero__sub{font-size:18px}
+      .hero__badge{font-size:13px}
+
+      /* CTA hero abaixo do copy no desktop */
+      .cta-wrap{max-width:860px;margin:0 auto;padding:32px 40px 0}
+      .cta-wrap .btn-cta{max-width:440px}
+      .cta-wrap .cta-seguro{justify-content:flex-start}
+
+      /* Seções */
+      .section-title{font-size:clamp(26px,2.8vw,34px)}
+      .section-label{font-size:12px}
+      .recebe__list{grid-template-columns:repeat(3,1fr)}
+      .beneficios__grid{grid-template-columns:repeat(4,1fr)}
+      .depoimentos{grid-template-columns:repeat(3,1fr)}
+      .depoimentos .depoimento:last-child{grid-column:auto}
+      .steps{grid-template-columns:repeat(4,1fr)}
+      .oferta__box{display:flex;align-items:center;gap:40px}
+      .oferta__incluso{flex:1;grid-template-columns:1fr;margin-bottom:0}
+      .oferta__preco{flex:0 0 240px;border-left:1px solid rgba(255,255,255,.12);padding-left:40px}
+      .garantia__box{max-width:600px;margin:0 auto;padding:36px 40px}
+      .garantia__title{font-size:22px}
+      .autoridade__box{max-width:700px;margin:0 auto}
+      .faq__list{max-width:700px;margin:0 auto}
+      .footer-cta{padding:60px 0}
+      .footer-cta__title{font-size:clamp(26px,3vw,36px)}
+      .footer-cta .btn-cta{max-width:460px}
+
+      /* Oculta sticky CTA em desktop — não faz sentido em tela larga */
+      .sticky-cta{display:none !important}
+    }
+
+    /* === LARGE DESKTOP (≥ 1280px) === */
+    @media(min-width:1280px){
+      .container{max-width:1000px}
+      .hero__inner{max-width:1000px}
+      .cta-wrap{max-width:1000px}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- BARRA TOPO -->
+  <div class="topbar" role="banner">
+    🎁 Bônus de <span>R$ 121</span> inclusos por tempo limitado
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" id="topo">
+    <div class="hero__inner">
+      <div class="hero__copy container">
+        <div class="hero__badge">Guia Prático para Mães</div>
+        <h1>
+          30 Guias Visuais para Saber Quando um Atraso é <em>Esperado</em> — e Quando Procurar Ajuda
+        </h1>
+        <p class="hero__sub">
+          Menos dúvida, mais clareza: descubra os sinais de cada fase do desenvolvimento e saiba, em segundos, se é só o tempo do seu filho ou se é hora de agir.
+        </p>
+      </div>
+
+      <!-- Imagem hero: eager + fetchpriority=high, dimensões explícitas para evitar CLS -->
+      <div class="hero__img-wrap">
+        <img
+          src="hero-480.jpg"
+          srcset="hero-480.jpg 480w, hero-800.jpg 800w"
+          sizes="(max-width:480px) 480px, 800px"
+          alt="Mãe acompanhando o desenvolvimento do filho com tranquilidade"
+          width="480"
+          height="322"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          class="hero__img"
+        >
+      </div>
+    </div>
+  </header>
+
+  <!-- CTA ACIMA DA DOBRA -->
+  <div class="cta-wrap">
+    <a href="#oferta" class="btn-cta" id="cta-hero">
+      Quero Meus 30 Guias Agora
+      <small>Acesso imediato · R$ 19,90</small>
+    </a>
+    <p class="cta-seguro">Compra 100% segura · Pix, cartão ou boleto</p>
+  </div>
+
+  <!-- O QUE VOCÊ RECEBE -->
+  <section class="recebe" aria-labelledby="recebe-title">
+    <div class="container">
+      <p class="section-label">O que você recebe</p>
+      <h2 class="section-title" id="recebe-title">Tudo o que você precisa em um só lugar</h2>
+      <p class="section-sub">Organizado por faixa etária, simples de usar no celular</p>
+
+      <ul class="recebe__list" aria-label="Lista de entregáveis">
+        <li class="recebe__item fade-in">
+          <span class="recebe__icon" aria-hidden="true">📋</span>
+          <span class="recebe__text">30 Guias Visuais organizados por faixa etária</span>
+        </li>
+        <li class="recebe__item fade-in">
+          <span class="recebe__icon" aria-hidden="true">✅</span>
+          <span class="recebe__text">Marcos do desenvolvimento apresentados de forma simples e objetiva</span>
+        </li>
+        <li class="recebe__item fade-in">
+          <span class="recebe__icon" aria-hidden="true">🚨</span>
+          <span class="recebe__text">Sinais de alerta destacados para cada fase</span>
+        </li>
+        <li class="recebe__item fade-in">
+          <span class="recebe__icon" aria-hidden="true">🎮</span>
+          <span class="recebe__text">Atividades simples relacionadas a cada etapa</span>
+        </li>
+        <li class="recebe__item fade-in">
+          <span class="recebe__icon" aria-hidden="true">⚡</span>
+          <span class="recebe__text">Acesso imediato após a compra</span>
+        </li>
+        <li class="recebe__item fade-in">
+          <span class="recebe__icon" aria-hidden="true">♾️</span>
+          <span class="recebe__text">Acesso vitalício — seu para sempre</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="beneficios" aria-labelledby="beneficios-title">
+    <div class="container">
+      <p class="section-label">Benefícios</p>
+      <h2 class="section-title" id="beneficios-title">O que muda na sua vida</h2>
+
+      <div class="beneficios__grid">
+        <div class="beneficio-card fade-in">
+          <div class="beneficio-card__icon" aria-hidden="true">💪</div>
+          <div class="beneficio-card__title">Mais segurança no dia a dia</div>
+          <div class="beneficio-card__desc">Acompanhe o desenvolvimento do seu filho com confiança e sem achismos.</div>
+        </div>
+        <div class="beneficio-card fade-in">
+          <div class="beneficio-card__icon" aria-hidden="true">😌</div>
+          <div class="beneficio-card__title">Menos medo de deixar passar</div>
+          <div class="beneficio-card__desc">Identifique sinais importantes em segundos, sem depender de grupos e vídeos no YouTube.</div>
+        </div>
+        <div class="beneficio-card fade-in">
+          <div class="beneficio-card__icon" aria-hidden="true">🧘‍♀️</div>
+          <div class="beneficio-card__title">Mais tranquilidade</div>
+          <div class="beneficio-card__desc">Saiba exatamente o que observar em cada fase sem entrar em pânico a cada dúvida.</div>
+        </div>
+        <div class="beneficio-card fade-in">
+          <div class="beneficio-card__icon" aria-hidden="true">🎯</div>
+          <div class="beneficio-card__title">Clareza para agir no momento certo</div>
+          <div class="beneficio-card__desc">Pare de depender de comparações e saiba com clareza quando é hora de buscar ajuda.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="como-funciona" aria-labelledby="como-title">
+    <div class="container">
+      <p class="section-label">Como funciona</p>
+      <h2 class="section-title" id="como-title">Simples do jeito que precisa ser</h2>
+      <p class="section-sub">Sem aplicativos. Sem vídeos longos.</p>
+
+      <div class="steps">
+        <div class="step fade-in">
+          <div class="step__num" aria-hidden="true">1</div>
+          <div class="step__content">
+            <div class="step__title">Compre e receba acesso imediato</div>
+            <div class="step__desc">Logo após a confirmação do pagamento, você recebe o link direto no e-mail.</div>
+          </div>
+        </div>
+        <div class="step fade-in">
+          <div class="step__num" aria-hidden="true">2</div>
+          <div class="step__content">
+            <div class="step__title">Abra no celular</div>
+            <div class="step__desc">Funciona em celular, tablet e computador. Sem instalar nada.</div>
+          </div>
+        </div>
+        <div class="step fade-in">
+          <div class="step__num" aria-hidden="true">3</div>
+          <div class="step__content">
+            <div class="step__title">Selecione a faixa etária</div>
+            <div class="step__desc">Escolha a fase do seu filho e visualize instantaneamente os marcos e sinais de alerta.</div>
+          </div>
+        </div>
+        <div class="step fade-in">
+          <div class="step__num" aria-hidden="true">4</div>
+          <div class="step__content">
+            <div class="step__title">Acompanhe com clareza</div>
+            <div class="step__desc">Sem pesquisar em vários sites, sem entrar em pânico — tudo organizado para você.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL -->
+  <section class="prova" aria-labelledby="prova-title">
+    <div class="container">
+      <p class="section-label">O que as mães dizem</p>
+      <h2 class="section-title" id="prova-title">Quem já tem não fica sem</h2>
+
+      <div class="depoimentos">
+        <div class="depoimento fade-in">
+          <p class="depoimento__text">
+            "Finalmente consegui entender o que realmente precisava observar sem entrar em pânico a cada comparação."
+          </p>
+          <div class="depoimento__autor">Juliana M.</div>
+        </div>
+        <div class="depoimento fade-in">
+          <p class="depoimento__text">
+            "É o tipo de material que toda mãe deveria ter salvo no celular."
+          </p>
+          <div class="depoimento__autor">Patrícia S.</div>
+        </div>
+        <div class="depoimento fade-in">
+          <p class="depoimento__text">
+            "Consulta rápida, linguagem simples e muito mais fácil do que pesquisar em vários sites."
+          </p>
+          <div class="depoimento__autor">Camila R.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BÔNUS -->
+  <section class="bonus" aria-labelledby="bonus-title">
+    <div class="container">
+      <p class="section-label">Bônus exclusivos</p>
+      <h2 class="section-title" id="bonus-title">Você também recebe de graça</h2>
+
+      <div>
+        <div class="bonus__header">
+          <div class="bonus__header-title">🎁 Bônus inclusos</div>
+          <div class="bonus__header-value">Valor total: R$ 121 — inclusos sem custo extra</div>
+        </div>
+        <div class="bonus__list">
+          <div class="bonus__item fade-in">
+            <span class="bonus__item-icon" aria-hidden="true">🌱</span>
+            <div class="bonus__item-info">
+              <div class="bonus__item-name">Kit Inicial com 7 Atividades de Estimulação Precoce</div>
+              <div class="bonus__item-price">Valor: R$ 37 — grátis para você</div>
+            </div>
+          </div>
+          <div class="bonus__item fade-in">
+            <span class="bonus__item-icon" aria-hidden="true">📅</span>
+            <div class="bonus__item-info">
+              <div class="bonus__item-name">Calendário de Acompanhamento dos Marcos (0 a 6 anos)</div>
+              <div class="bonus__item-price">Valor: R$ 47 — grátis para você</div>
+            </div>
+          </div>
+          <div class="bonus__item fade-in">
+            <span class="bonus__item-icon" aria-hidden="true">🤝</span>
+            <div class="bonus__item-info">
+              <div class="bonus__item-name">Guia de Brincadeiras para Fortalecer o Vínculo</div>
+              <div class="bonus__item-price">Valor: R$ 37 — grátis para você</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bonus__total">
+          Em bônus você recebe: <strong>R$ 121,00</strong> sem pagar nada a mais
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section class="oferta" id="oferta" aria-labelledby="oferta-title">
+    <div class="container">
+      <p class="section-label">Oferta especial</p>
+      <h2 class="section-title" id="oferta-title">Tudo isso por apenas</h2>
+
+      <div class="oferta__box">
+        <ul class="oferta__incluso" aria-label="O que está incluso">
+          <li>30 Guias Visuais para Identificar Sinais de Atraso</li>
+          <li>Kit Inicial com 7 Atividades de Estimulação Precoce</li>
+          <li>Calendário de Acompanhamento dos Marcos</li>
+          <li>Guia de Brincadeiras para Fortalecer o Vínculo</li>
+        </ul>
+
+        <div class="oferta__preco">
+          <div class="oferta__de">De R$ 97,00</div>
+          <div class="oferta__por">Por apenas</div>
+          <div class="oferta__valor">
+            <sup>R$</sup>19<sub>,90</sub>
+          </div>
+          <div class="oferta__parcelas">Ou 2× de R$ 9,95 no cartão</div>
+        </div>
+      </div>
+
+      <div class="oferta__urgencia">⏳ Oferta com bônus por tempo limitado</div>
+
+      <a href="https://pay.hotmart.com/SEU-LINK-AQUI" class="btn-cta btn-cta--dark" id="cta-oferta">
+        Quero Meus 30 Guias Agora
+        <small>Acesso imediato após a confirmação · 100% seguro</small>
+      </a>
+      <p class="cta-seguro" style="color:rgba(255,255,255,.5);margin-top:12px">🔒 Compra 100% segura · Pix, cartão ou boleto</p>
+    </div>
+  </section>
+
+  <!-- GARANTIA -->
+  <section class="garantia" aria-labelledby="garantia-title">
+    <div class="container">
+      <div class="garantia__box fade-in">
+        <div class="garantia__icon" aria-hidden="true">🛡️</div>
+        <h2 class="garantia__title" id="garantia-title">Garantia de 7 Dias — Risco Zero</h2>
+        <p class="garantia__text">
+          Se durante os primeiros 7 dias você concluir que o material não é para você, basta solicitar o reembolso e devolveremos <strong>100% do valor pago</strong>. Sem burocracia, sem perguntas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTORIDADE -->
+  <section class="autoridade" aria-labelledby="autoridade-title">
+    <div class="container">
+      <div class="autoridade__box fade-in">
+        <div class="autoridade__title" id="autoridade-title">📚 Base técnica e segurança</div>
+        <p class="autoridade__text">
+          Os guias foram elaborados com base nas diretrizes de segurança recomendadas pela <strong>Sociedade Brasileira de Pediatria</strong> e pelo <strong>Guia para Crianças Brasileiras do Ministério da Saúde</strong>. Menos insegurança, mais embasamento.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <p class="section-label">Dúvidas frequentes</p>
+      <h2 class="section-title" id="faq-title">Respondemos tudo</h2>
+
+      <div class="faq__list" role="list">
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-1">
+            Este material substitui consulta médica?
+          </button>
+          <div class="faq__answer" id="faq-1" role="region">
+            <p>Não. Ele ajuda você a acompanhar o desenvolvimento e reconhecer sinais de alerta, mas não substitui avaliação profissional. Use como suporte, não como diagnóstico.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-2">
+            Serve para qualquer criança?
+          </button>
+          <div class="faq__answer" id="faq-2" role="region">
+            <p>Sim. Os guias são organizados por faixa etária para facilitar a consulta em qualquer fase do desenvolvimento.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-3">
+            Preciso de internet para acessar?
+          </button>
+          <div class="faq__answer" id="faq-3" role="region">
+            <p>O acesso inicial precisa de internet, mas você pode salvar o PDF no celular e acessar offline quando quiser.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-4">
+            Como recebo o acesso?
+          </button>
+          <div class="faq__answer" id="faq-4" role="region">
+            <p>Logo após a confirmação do pagamento, você recebe o link de acesso por e-mail. É imediato.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-5">
+            Posso acessar pelo celular?
+          </button>
+          <div class="faq__answer" id="faq-5" role="region">
+            <p>Sim. O material funciona perfeitamente em celular, tablet e computador — sem instalar nenhum aplicativo.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section class="footer-cta" aria-labelledby="footer-cta-title">
+    <div class="container">
+      <h2 class="footer-cta__title" id="footer-cta-title">Sua clareza vale mais do que R$ 19,90</h2>
+      <p class="footer-cta__sub">Acesso imediato · Garantia de 7 dias · Risco zero</p>
+      <a href="https://pay.hotmart.com/SEU-LINK-AQUI" class="btn-cta" id="cta-footer">
+        Quero Meus 30 Guias Agora
+        <small>Acesso imediato após a confirmação</small>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 · Todos os direitos reservados</p>
+    <p style="margin-top:4px">
+      <a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a>
+    </p>
+    <p style="margin-top:8px;font-size:10px;opacity:.5">
+      Este produto é entregue em formato digital. O conteúdo não substitui avaliação médica ou terapêutica profissional.
+    </p>
+  </footer>
+
+  <!-- STICKY CTA MOBILE (aparece após scroll) -->
+  <div class="sticky-cta" id="sticky-cta" role="complementary" aria-label="Oferta fixada">
+    <a href="#oferta" class="btn-cta">
+      Quero Meus 30 Guias — R$ 19,90
+      <small>Acesso imediato · Garantia de 7 dias</small>
+    </a>
+  </div>
+
+  <!-- JS MÍNIMO: FAQ accordion + Sticky CTA + Fade-in observer -->
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq__question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = btn.closest('.faq__item');
+        var isOpen = item.classList.contains('open');
+        // Fecha todos
+        document.querySelectorAll('.faq__item.open').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+        });
+        // Abre o clicado
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Sticky CTA: aparece após rolar 300px, some na seção #oferta
+    (function() {
+      var sticky = document.getElementById('sticky-cta');
+      var oferta = document.getElementById('oferta');
+      var shown = false;
+
+      function onScroll() {
+        var scrollY = window.scrollY || window.pageYOffset;
+        var ofertaTop = oferta ? oferta.getBoundingClientRect().top + scrollY - window.innerHeight : Infinity;
+        var shouldShow = scrollY > 300 && scrollY < ofertaTop;
+
+        if (shouldShow && !shown) {
+          sticky.classList.add('show');
+          shown = true;
+        } else if (!shouldShow && shown) {
+          sticky.classList.remove('show');
+          shown = false;
+        }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+
+    // Fade-in com IntersectionObserver
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.fade-in').forEach(function(el) {
+        io.observe(el);
+      });
+    } else {
+      // Fallback: mostra tudo
+      document.querySelectorAll('.fade-in').forEach(function(el) {
+        el.classList.add('visible');
+      });
+    }
+  </script>
+
+</body>
+</html>
