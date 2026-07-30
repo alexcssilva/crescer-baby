@@ -70,6 +70,10 @@
     .hero__inner{display:flex;flex-direction:column;gap:32px;align-items:center;text-align:center}
     .hero__copy{width:100%;display:flex;flex-direction:column;align-items:center}
     .hero__badge{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid var(--primary-light);border-radius:40px;padding:8px 18px;font-size:13px;font-weight:700;color:var(--primary);box-shadow:0 3px 10px rgba(194,24,91,0.12);margin-bottom:16px}
+    
+    /* DESTAQUE CHAMATIVO PARA +70 GUIAS */
+    .num-highlight{display:inline-block;background:linear-gradient(135deg, #C2185B 0%, #880E4F 100%);color:#fff;padding:2px 12px;border-radius:8px;font-size:1.05em;font-weight:900;box-shadow:0 4px 14px rgba(194,24,91,0.3);letter-spacing:.5px;vertical-align:middle}
+
     .hero h1{font-size:clamp(25px, 6.8vw, 36px);font-weight:900;line-height:1.24;color:var(--text-dark);letter-spacing:-.5px;margin-bottom:16px;max-width:700px}
     .hero h1 em{color:var(--primary);font-style:normal;background:linear-gradient(120deg, rgba(244,143,177,0.3) 0%, rgba(244,143,177,0) 100%);padding:0 6px;border-radius:4px}
     .hero__sub{font-size:clamp(15px, 4.2vw, 18px);color:#4A4A4A;line-height:1.65;margin-bottom:28px;max-width:640px}
@@ -242,18 +246,18 @@
     <div class="container">
       <div class="hero__inner">
         <div class="hero__copy">
-          <div class="hero__badge">Crescer Baby · Guia Prático Digital</div>
+          <div class="hero__badge">Crescer Baby · Kit Completo com +70 Guias Visuais</div>
           <h1>
-            30 Guias Visuais para Saber Quando um Atraso é <em>Esperado</em> — e Quando Procurar Ajuda
+            Kit Completo com <span class="num-highlight">+70 Guias Visuais</span> para Saber Quando um Atraso é <em>Esperado</em> — e Quando Procurar Ajuda
           </h1>
           <p class="hero__sub">
-            Menos dúvida, mais clareza: descubra os sinais de cada fase do desenvolvimento e saiba, em segundos, se é só o tempo do seu filho ou se é hora de agir.
+            Menos dúvida, mais clareza: descubra os sinais de cada fase do desenvolvimento (0 a 6 anos) e saiba, em segundos, se é só o tempo do seu filho ou se é hora de agir.
           </p>
           
           <!-- BOTÃO CTA VERDE DE ALTA CONVERSÃO -->
           <a href="#oferta" class="btn-cta" id="cta-hero">
-            Quero Meus 30 Guias Agora
-            <small>Acesso imediato · R$ 19,90</small>
+            Quero Meus +70 Guias Agora
+            <small>Acesso imediato · R$ 19,90 · Pagamento único</small>
           </a>
 
           <div class="trust-badges">
@@ -286,34 +290,34 @@
     <div class="container">
       <div class="section-header">
         <span class="section-label">O que você recebe</span>
-        <h2 class="section-title" id="recebe-title">Tudo o que você precisa em um só lugar</h2>
-        <p class="section-sub">Organizado por faixa etária, simples de consultar no celular</p>
+        <h2 class="section-title" id="recebe-title">Biblioteca Completa de Acompanhamento Infantil</h2>
+        <p class="section-sub">Organizado por faixa etária (0 a 6 anos), simples de consultar no celular</p>
       </div>
 
       <div class="recebe__grid">
         <div class="recebe__card">
           <div class="recebe__icon">📋</div>
-          <div class="recebe__text">30 Guias Visuais organizados por faixa etária</div>
+          <div class="recebe__text"><strong>+70 Guias Visuais</strong> organizados por faixa etária (0 a 6 anos)</div>
         </div>
         <div class="recebe__card">
           <div class="recebe__icon">✅</div>
-          <div class="recebe__text">Marcos do desenvolvimento apresentados de forma simples e objetiva</div>
+          <div class="recebe__text"><strong>30 Guias Visuais</strong> de Marcos do Desenvolvimento Infantil</div>
         </div>
         <div class="recebe__card">
           <div class="recebe__icon">🚨</div>
-          <div class="recebe__text">Sinais de alerta destacados para cada fase</div>
+          <div class="recebe__text"><strong>16 Guias de Sinais de Alerta</strong> ("Quando procurar ajuda?")</div>
         </div>
         <div class="recebe__card">
           <div class="recebe__icon">🎮</div>
-          <div class="recebe__text">Atividades simples relacionadas a cada etapa</div>
+          <div class="recebe__text"><strong>15 Guias de Atividades</strong> de Estimulação Precoce</div>
         </div>
         <div class="recebe__card">
-          <div class="recebe__icon">⚡</div>
-          <div class="recebe__text">Acesso imediato após a confirmação</div>
+          <div class="recebe__icon">📅</div>
+          <div class="recebe__text"><strong>10 Checklists Rápidos</strong> de Acompanhamento por Idade</div>
         </div>
         <div class="recebe__card">
           <div class="recebe__icon">♾️</div>
-          <div class="recebe__text">Acesso vitalício — seu para sempre</div>
+          <div class="recebe__text"><strong>Acesso Vitalício</strong> — seu para sempre, sem mensalidades</div>
         </div>
       </div>
     </div>
@@ -483,10 +487,11 @@
         <div class="oferta__copy">
           <h2 class="section-title" id="oferta-title" style="margin-bottom:16px">Hoje você leva o pacote completo:</h2>
           <ul class="oferta__incluso">
-            <li>30 Guias Visuais para Identificar Sinais de Atraso</li>
-            <li>Kit Inicial com 7 Atividades de Estimulação Precoce</li>
-            <li>Calendário de Acompanhamento (0 a 6 anos)</li>
-            <li>Guia de Brincadeiras para Fortalecer o Vínculo</li>
+            <li><strong>+70 Guias Visuais</strong> do Desenvolvimento Infantil (0 a 6 anos)</li>
+            <li><strong>30 Guias</strong> de Marcos do Desenvolvimento</li>
+            <li><strong>16 Guias</strong> de Sinais de Alerta Vermelho</li>
+            <li><strong>15 Guias</strong> de Atividades de Estimulação Precoce</li>
+            <li><strong>10 Checklists</strong> Rápidos de Acompanhamento por Idade</li>
           </ul>
         </div>
 
@@ -500,7 +505,7 @@
 
           <!-- BOTÃO CTA VERDE DIRETO E LIMPO -->
           <a href="https://pay.hotmart.com/SEU-LINK-AQUI" class="btn-cta" id="cta-oferta">
-            QUERO GARANTIR MEU ACESSO
+            QUERO MEUS +70 GUIAS AGORA
             <small>Acesso imediato · R$ 19,90 · Pagamento único</small>
           </a>
 
@@ -599,7 +604,7 @@
       <h2 class="footer-cta__title" id="footer-cta-title">Sua tranquilidade vale mais do que R$ 19,90</h2>
       <p class="footer-cta__sub">Acesso imediato · Garantia de 7 dias · Risco zero</p>
       <a href="https://pay.hotmart.com/SEU-LINK-AQUI" class="btn-cta" id="cta-footer" style="max-width:500px">
-        Quero Meus 30 Guias Agora
+        QUERO MEUS +70 GUIAS AGORA
         <small>Acesso imediato após a confirmação</small>
       </a>
     </div>
@@ -617,7 +622,7 @@
   <!-- STICKY CTA MOBILE -->
   <div class="sticky-cta" id="sticky-cta" role="complementary" aria-label="Oferta fixada">
     <a href="#oferta" class="btn-cta">
-      Quero Meus 30 Guias — R$ 19,90
+      Quero Meus +70 Guias — R$ 19,90
       <small>Acesso imediato · Garantia de 7 dias</small>
     </a>
   </div>
