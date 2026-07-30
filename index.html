@@ -152,13 +152,13 @@
     .oferta__incluso li{display:flex;align-items:center;gap:14px;font-size:15px;font-weight:600;color:var(--text-dark)}
     .oferta__incluso li::before{content:'✓';color:#fff;background:var(--green);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;flex-shrink:0}
 
-    .oferta__box-preco{background:var(--bg-light);border:1.5px dashed var(--primary-light);border-radius:var(--radius-md);padding:28px 20px;margin-bottom:28px}
-    .oferta__de{font-size:15px;color:var(--text-muted);text-decoration:line-through}
-    .oferta__por{font-size:14px;color:var(--primary);font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-top:4px}
-    .oferta__valor{font-size:clamp(48px, 12vw, 64px);font-weight:900;color:var(--text-dark);line-height:1;margin:10px 0}
-    .oferta__valor sup{font-size:24px;font-weight:800;vertical-align:top;margin-top:8px;color:var(--primary)}
-    .oferta__valor sub{font-size:18px;font-weight:600;color:var(--text-muted)}
-    .oferta__parcelas{font-size:13px;color:var(--text-muted);font-weight:600}
+    .oferta__box-preco{background:var(--bg-light);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:20px 16px;margin:20px 0 24px}
+    .oferta__de{font-size:14px;color:var(--text-muted);text-decoration:line-through}
+    .oferta__por{font-size:13px;color:var(--primary);font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-top:2px}
+    .oferta__valor{font-size:clamp(44px, 11vw, 58px);font-weight:900;color:var(--text-dark);line-height:1;margin:6px 0}
+    .oferta__valor sup{font-size:22px;font-weight:800;vertical-align:top;margin-top:6px;color:var(--primary)}
+    .oferta__valor sub{font-size:16px;font-weight:600;color:var(--text-muted)}
+    .oferta__parcelas{font-size:13px;color:var(--text-muted);font-weight:700}
 
     /* === GARANTIA E AUTORIDADE (CENTRALIZADAS) === */
     .garantia{background:#fff}
@@ -225,7 +225,8 @@
       .oferta__wrapper{display:flex;align-items:center;gap:44px;text-align:left;padding:44px 48px}
       .oferta__copy{flex:1}
       .oferta__incluso{margin-bottom:0}
-      .oferta__box-preco{flex:0 0 360px;margin-bottom:0;text-align:center}
+      .oferta__right{flex:0 0 360px;display:flex;flex-direction:column;align-items:center;text-align:center}
+      .oferta__box-preco{width:100%;margin-top:0}
       .autoridade__box{text-align:left}
     }
   </style>
@@ -475,7 +476,7 @@
     </div>
   </section>
 
-  <!-- OFERTA ESPECIAL (TUDO DENTRO DO CARD) -->
+  <!-- OFERTA ESPECIAL (LIMPA E DIRETA) -->
   <section class="oferta" id="oferta" aria-labelledby="oferta-title">
     <div class="container">
       <div class="oferta__wrapper">
@@ -491,25 +492,27 @@
           </ul>
         </div>
 
-        <div class="oferta__box-preco">
-          <div class="oferta__de">De R$ 97,00</div>
-          <div class="oferta__por">Por apenas</div>
-          <div class="oferta__valor">
-            <sup>R$</sup>19<sub>,90</sub>
+        <div class="oferta__right">
+          <div class="oferta__box-preco">
+            <div class="oferta__de">De R$ 97,00</div>
+            <div class="oferta__por">Por apenas</div>
+            <div class="oferta__valor">
+              <sup>R$</sup>19<sub>,90</sub>
+            </div>
+            <div class="oferta__parcelas">Pagamento único · Sem mensalidades</div>
           </div>
-          <div class="oferta__parcelas">Pagamento único · Sem mensalidades</div>
 
-          <!-- BOTÃO CTA VERDE DENTRO DO CARD -->
-          <a href="https://pay.hotmart.com/SEU-LINK-AQUI" class="btn-cta" id="cta-oferta" style="margin-top:20px;width:100%">
-            SIM! QUERO MEUS 30 GUIAS + BÔNUS
-            <small>Acesso imediato por apenas R$ 19,90 · Pagamento único</small>
+          <!-- BOTÃO CTA VERDE DIRETO E LIMPO -->
+          <a href="https://pay.hotmart.com/SEU-LINK-AQUI" class="btn-cta" id="cta-oferta">
+            QUERO GARANTIR MEU ACESSO
+            <small>Acesso imediato · R$ 19,90 · Pagamento único</small>
           </a>
 
-          <!-- SELOS DE CONFIANÇA DENTRO DO CARD -->
-          <div class="trust-badges" style="margin-top:16px">
-            <span>🔒 Pagamento 100% Criptografado</span>
+          <!-- SELOS DE CONFIANÇA EM LINHA HORIZONTAL -->
+          <div class="trust-badges" style="margin-top:14px">
+            <span>🔒 Pagamento Seguro</span>
             <span>⚡ Liberação Imediata</span>
-            <span>🛡️ Garantia de 7 Dias</span>
+            <span>🛡️ 7 Dias de Garantia</span>
           </div>
         </div>
       </div>
