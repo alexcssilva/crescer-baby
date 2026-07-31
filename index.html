@@ -292,19 +292,22 @@
           </div>
         </div>
 
-        <!-- MOCKUP 3D TANGÍVEL DO PRODUTO -->
+        <!-- MOCKUP 3D TANGÍVEL DO PRODUTO (WEBP OTIMIZADO) -->
         <div class="hero__img-wrap">
-          <img
-            src="mockup-produto-480.jpg"
-            srcset="mockup-produto-480.jpg 480w, mockup-produto-800.jpg 800w"
-            sizes="(max-width:840px) 480px, 800px"
-            alt="Mockup do Guia Digital no Celular e Computador"
-            width="480"
-            height="343"
-            loading="eager"
-            fetchpriority="high"
-            class="hero__img"
-          >
+          <picture>
+            <source srcset="mockup-produto-480.webp 480w, mockup-produto-800.webp 800w" type="image/webp" sizes="(max-width:840px) 480px, 800px">
+            <img
+              src="mockup-produto-480.jpg"
+              srcset="mockup-produto-480.jpg 480w, mockup-produto-800.jpg 800w"
+              sizes="(max-width:840px) 480px, 800px"
+              alt="Mockup do Guia Digital no Celular e Computador"
+              width="480"
+              height="343"
+              loading="eager"
+              fetchpriority="high"
+              class="hero__img"
+            >
+          </picture>
         </div>
       </div>
     </div>
