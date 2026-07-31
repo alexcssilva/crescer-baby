@@ -152,9 +152,10 @@
     .oferta__wrapper{background:#fff;border:3.5px solid var(--primary);border-radius:var(--radius-lg);padding:36px 24px;box-shadow:var(--shadow-lg);text-align:center;position:relative}
     .oferta__badge-top{position:absolute;top:-18px;left:50%;transform:translateX(-50%);background:var(--primary);color:#fff;font-size:13px;font-weight:800;padding:7px 22px;border-radius:30px;letter-spacing:.5px;text-transform:uppercase;white-space:nowrap;box-shadow:0 4px 14px rgba(194,24,91,0.35)}
     
-    .oferta__incluso{list-style:none;display:flex;flex-direction:column;gap:14px;margin:28px 0 36px;text-align:left}
-    .oferta__incluso li{display:flex;align-items:center;gap:14px;font-size:15px;font-weight:600;color:var(--text-dark)}
-    .oferta__incluso li::before{content:'✓';color:#fff;background:var(--green);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;flex-shrink:0}
+    .oferta__incluso{list-style:none;display:flex;flex-direction:column;gap:14px;margin:24px 0 28px;text-align:left}
+    .oferta__incluso li{display:flex;align-items:flex-start;gap:12px;font-size:15px;line-height:1.45;color:var(--text-dark)}
+    .oferta__incluso li::before{content:'✓';color:#fff;background:var(--green);width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:12px;flex-shrink:0;margin-top:2px}
+    .oferta__incluso li span{flex:1}
 
     .oferta__box-preco{background:var(--bg-light);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:22px 18px;margin:20px 0 24px}
     .oferta__de{font-size:14px;color:var(--text-muted);text-decoration:line-through}
@@ -504,10 +505,10 @@
         <div class="oferta__copy">
           <h2 class="section-title" id="oferta-title" style="margin-bottom:16px">Hoje você leva:</h2>
           <ul class="oferta__incluso">
-            <li><strong>+70 Guias Visuais</strong> para Identificar Sinais de Atraso Infantil</li>
-            <li><strong>Kit Inicial</strong> com 7 Atividades de Estimulação Precoce</li>
-            <li><strong>Calendário</strong> de Acompanhamento</li>
-            <li><strong>Guia</strong> de Brincadeiras</li>
+            <li><span><strong>+70 Guias Visuais</strong> para Identificar Sinais de Atraso Infantil</span></li>
+            <li><span><strong>Kit Inicial</strong> com 7 Atividades de Estimulação Precoce</span></li>
+            <li><span><strong>Calendário</strong> de Acompanhamento</span></li>
+            <li><span><strong>Guia</strong> de Brincadeiras</span></li>
           </ul>
         </div>
 
